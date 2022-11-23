@@ -1,20 +1,69 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package taller4;
 
-/**
- *
- * @author uestudiantes
- */
+import java.util.Scanner;
+
 public class Ejercicio18 {
 
     /**
-     * @param args the command line arguments
+     * Realizar un algoritmo que calcule el salarioa pagar de un empleado según los siguientes parámetros: 
+     * •Si gana menos de 700.000, descuento de pensión =-2%, descuento de salud =-4% y más Aux. de transporte= +11%.
+     * •Si gana entre 741.000 y 999.999, descuento de pensión =-4%, descuento de salud =-6% y más Aux. de transporte= +9%.
+     * •Si gana más 1.000.000y menos 1.800.00, descuento por pensión es -6%, descuento de segurode vida 5%, descuento de salud =-6% y más Aux. de transporte= +9%.
+     * •Si gana más de 1.800.000 y menos de 2.500.00, descuento por pensión es -6%, descuento de seguro de vida 5%, descuento de salud =-8% y más Aux. de transporte= +8%.
+     * •Si gana más de 2.500.000, descuento por pensión es -8%, descuento de seguro de vida 6%, descuento de salud =-10% y más Aux. de transporte= +9%.
      */
+
+    //DE: Salario
+    //DS: Salario a pagar según los parametros
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+double salario;
+double salarioFinal;
+        
+    Scanner leer= new Scanner(System.in);
+    
+    
+        System.out.println("Porfavor digite su salario: ");
+        salario = leer.nextDouble();
+        
+        if (salario<700000) {
+            
+        salarioFinal = ((salario) - (salario*100/2)- (salario*100/4) + (salario*100/11));
+            System.out.println("El valor a pagar al empleado es: " + salarioFinal);
+        }
+        
+        if ((salario>=741000)&&(salario<=999999)) {
+        
+        salarioFinal = ((salario)- (salario*100/4)- (salario*100/6) + (salario*100/9) );
+            System.out.println("El valor a pagar al empleado es: " + salarioFinal);
+            
+        }
+   
+        if ((salario >= 1000000) && (salario< 1800000)) {
+         
+         salarioFinal = ((salario)- (salario*100/6)- (salario*100/5)- (salario*100/6) + (salario*100/9) );
+            System.out.println("El valor a pagar al empleado es: " + salarioFinal);
+               
+                  
+        }
+    
+        if ((salario>=1800000)&&(salario<2500000)) {
+            
+          salarioFinal = ((salario)- (salario*100/6)- (salario*100/5)- (salario*100/8) + (salario*100/8) );
+            System.out.println("El valor a pagar al empleado es: " + salarioFinal);
+            
+        }
+    
+        if (salario>=2500000) {
+            
+           salarioFinal = ((salario)- (salario*100/8)- (salario*100/6)- (salario*100/10) + (salario*100/9) );
+            System.out.println("El valor a pagar al empleado es: " + salarioFinal);  
+            
+        }
+    
     }
+    
+    
     
 }
