@@ -9,6 +9,8 @@ public class Taller4 {
      * Realizar un programa que calcule el valor a pagar por algunos galones de gasolina si sabemos que cada litro de gasolina vale 9.500.
      * Imprimir la cantidad de galones, precio por galón, cantidad de litros y precio a pagar.
      */
+    
+    // Valentina Urquijo & Sofia Garcia
 
     // DE: Cant de galones
     // DS: Cant de galones, precio por galón, cantidad de litros, precio a pagar

@@ -20,6 +20,7 @@ public class Ejercicio18 {
         
 double salario;
 double salarioFinal;
+
         
     Scanner leer= new Scanner(System.in);
     
@@ -29,20 +30,24 @@ double salarioFinal;
         
         if (salario<700000) {
             
-        salarioFinal = ((salario) - (salario*100/2)- (salario*100/4) + (salario*100/11));
+        salarioFinal = ((salario) - (salario*0.02)- (salario*0.04) + (salario*0.11));
             System.out.println("El valor a pagar al empleado es: " + salarioFinal);
+        }
+        
+        if ((salario >=700000) &&(salario <741000)){
+            System.out.println("El valor a pagar al empleado es: " + salario);
         }
         
         if ((salario>=741000)&&(salario<=999999)) {
         
-        salarioFinal = ((salario)- (salario*100/4)- (salario*100/6) + (salario*100/9) );
+        salarioFinal = ((salario)- (salario*0.04)- (salario*0.06) + (salario*0.09) );
             System.out.println("El valor a pagar al empleado es: " + salarioFinal);
             
         }
    
         if ((salario >= 1000000) && (salario< 1800000)) {
          
-         salarioFinal = ((salario)- (salario*100/6)- (salario*100/5)- (salario*100/6) + (salario*100/9) );
+         salarioFinal = ((salario)- (salario*0.06)- (salario*0.05)- (salario*0.06) + (salario*0.09) );
             System.out.println("El valor a pagar al empleado es: " + salarioFinal);
                
                   
@@ -50,14 +55,14 @@ double salarioFinal;
     
         if ((salario>=1800000)&&(salario<2500000)) {
             
-          salarioFinal = ((salario)- (salario*100/6)- (salario*100/5)- (salario*100/8) + (salario*100/8) );
+          salarioFinal = ((salario)- (salario*0.06)- (salario*0.05)- (salario*0.08) + (salario*0.08) );
             System.out.println("El valor a pagar al empleado es: " + salarioFinal);
             
         }
     
         if (salario>=2500000) {
             
-           salarioFinal = ((salario)- (salario*100/8)- (salario*100/6)- (salario*100/10) + (salario*100/9) );
+           salarioFinal = ((salario)- (salario*0.08)- (salario*0.06)- (salario*0.10) + (salario*0.09) );
             System.out.println("El valor a pagar al empleado es: " + salarioFinal);  
             
         }
